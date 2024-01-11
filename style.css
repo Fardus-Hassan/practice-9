@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* common style */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: #CBD5E1;
+    padding: 100px;
+}
+
+.container{
+    max-width: 1280px;
+    width: 95%;
+    margin:0 auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 80px 100px;
+    background-color: #F2F9FE;
+}
+
+/* head1 */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.slider .moon-sun{
+    background-color: #223344;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: 50px;
+    padding: 2px;
+    gap: 5px;
+    width: 85%;
+}
+
+.sun{
+    background-color: #F2F9FE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li a{
+    color: #909193;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover{
+    color: #111729;
+}
+
+/* banner */
+
