@@ -4,69 +4,75 @@
 
 /* common style */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-body{
+body {
     background-color: #CBD5E1;
 }
 
-.container{
+.container {
     max-width: 1280px;
     width: 95%;
-    margin:0 auto;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     padding: 20px 80px 100px;
     background-color: #F2F9FE;
 }
 
-section{
+section {
     margin: 100px 0;
 }
 
 
 /* head1 */
 
-.nav{
+.nav i{
+    font-size:1.75rem;
+    color:#111729;
+    display: none;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
 }
 
-.slider .moon-sun{
+.slider .moon-sun {
     background-color: #223344;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 50px;
     padding: 2px;
     gap: 5px;
     width: 85%;
 }
 
-.sun{
+.sun {
     background-color: #F2F9FE;
     border-radius: 50%;
     display: flex;
@@ -74,93 +80,168 @@ section{
     align-items: center;
 }
 
-.moon{
+.moon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav ul li a{
+.nav ul li a {
     color: #909193;
     font-size: 0.875rem;
     font-weight: 600;
     transition: 0.3s;
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
     color: #111729;
-    font-weight:700;
+    font-weight: 700;
 }
 
 /* banner */
 
-.banner{
+.banner {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.banner-text{
+.banner-text {
     width: 40%;
 }
 
-.banner-img{
+.banner-img {
     width: 50%;
 }
 
-.banner-text h4{
+.banner-text h4 {
     color: #223344;
     font-size: 0.875em;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.banner-text h1{
+.banner-text h1 {
     color: #223344;
     font-size: 3.75rem;
     margin-bottom: 30px;
-    line-height:1.5em;
+    line-height: 1.5em;
     font-weight: 800;
 }
 
-.banner-text p{
+.banner-text p {
     color: #223344af;
-    font-size:1.125rem;
+    font-size: 1.125rem;
     margin-bottom: 30px;
-    line-height:1.5em;
+    line-height: 1.5em;
     font-weight: 500;
 }
 
-.btn-1{
+.btn-1 {
     background-color: #2A4DD0;
     font-size: 1rem;
     padding: 20px 35px;
-    border:none;
+    border: none;
     border-radius: 15px;
     color: #fff;
-    font-weight:600;
+    font-weight: 600;
     margin-right: 30px;
+    margin-bottom: 40px;
 }
 
-.btn-2{
+.btn-2 {
     color: #2A4DD0;
     font-size: 1rem;
-    font-weight:600;
+    font-weight: 600;
     border: none;
     border-bottom: 2px solid #2A4DD0;
     background-color: transparent;
+    margin-bottom: 40px;
 }
 
-.banner-text ul{
+.banner-text ul {
     display: flex;
     gap: 30px;
-    margin-top: 40px;
 }
 
-.banner-text ul li{
+.banner-text ul li {
     display: flex;
     align-items: center;
     gap: 5px;
     color: #909193;
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+
+
+/* responsive */
+
+/* medium*/
+
+@media screen and (max-width:1024px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner-img{
+        width: 100%;
+        margin-bottom: 100px;
+        margin-top: -20px;
+    }
+
+    .banner-img div{
+       display: flex;
+       justify-content: center;
+        align-items: flex-start;
+    }
+
+    .banner-img div img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    .banner-img div img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+
+    .nav ul,
+    .nav .slider{
+        display: none;
+    }
+
+    .nav i{
+        display:flex;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    .banner-img div img{
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        color: #223344;
+        font-size: 2.75rem;
+        margin-bottom: 30px;
+        line-height: 1.5em;
+        font-weight: 800;
+    }
+
+    .container{
+        width: 110%;
+    }
 }
